@@ -19,14 +19,6 @@ const switcher = document.querySelector('.btn');
 
 
 });
-function run(){
-    // 8887 is the port number you have launched your serve
-    var URL = "http://127.0.0.1:8887/hunie.jpg";
- 
-    window.open(URL, null);
- 
- }
- run();
 
 
 
