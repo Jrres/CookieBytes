@@ -1,32 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 body{
     font-family :monospace;
 }
     ul{
-        font-family:'marker_feltregular';
+        font-family:Fredoka One, Arial, Helvetica, sans-serif;
     }
       .center{
         text-align: center;
         height:500;
       }
      .imgpos{
-      height: 10%;
-      width: 10%;
+      height: 200px;
+      width: 200px;
       background-size: cover;
       display: block;
       margin-left: auto;
       margin-right: auto;
-
+      border-radius: 100%;
+      background: none;
+      outline-style:none; 
      }
     #msg{
       text-align: center;
-      font-family: 'marker-feltregular', monospace;
+      font-family: Fredoka One, Arial, Helvetica, sans-serif;
       margin: 50;
   
+    }
+    div.pos:hover{
+      background:#0c262c;
+      position:relative;
+      padding:2;
+    }
+   .list:hover{
+      text-decoration: underline;
     }
       .list {
         list-style-position: inside; 
         text-align: center;
-        font-family: 'marker-feltregular';
+        font-family: Fredoka One, Arial, Helvetica, sans-serif;
         font-weight:normal;
         font-style:normal;
         font-size: 150%;
@@ -35,7 +46,7 @@ body{
       .pos{
         text-align:left;
         list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Fredoka One, Arial, Helvetica, sans-serif;
         font-weight:500;
         float:left;
         font-size: 20px;
@@ -102,4 +113,7 @@ body{
       }
       .btn:focus{
         outline-style:none; 
+      }
+      .btn:hover{
+        opacity:50%;
       }
