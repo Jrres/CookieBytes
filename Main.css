@@ -1,0 +1,105 @@
+body{
+    font-family :monospace;
+}
+    ul{
+        font-family:'marker_feltregular';
+    }
+      .center{
+        text-align: center;
+        height:500;
+      }
+     .imgpos{
+      height: 10%;
+      width: 10%;
+      background-size: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: url('C:\Users\jackr\Desktop\website\chromatic-square.gif');
+     }
+    #msg{
+      text-align: center;
+      font-family: 'marker-feltregular', monospace;
+      margin: 50;
+  
+    }
+      .list {
+        list-style-position: inside; 
+        text-align: center;
+        font-family: 'marker-feltregular';
+        font-weight:normal;
+        font-style:normal;
+        font-size: 150%;
+        list-style-type: none;
+      }
+      .pos{
+        text-align:left;
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:500;
+        float:left;
+        font-size: 20px;
+        font-weight: 5000;
+        letter-spacing: .9px;
+        text-decoration: none;
+        
+      }
+      :root {
+        --cyan: #00FF9E;
+        --black: #000000;
+      }/*root represents the html ele -- here we define 3 global 
+      vars to define 3 colors*/
+      *{
+        color: var(--fontColor);
+        font-family: helvetica;
+      }
+      /* the star is a universal selector. It applies to all page elements*/
+        /* * is setting the default color property for the page*/
+      body{
+        background: var(--bg);
+      }
+      .dark-theme{
+      --bg: var(--black);
+      --fontColor: var(--cyan);
+      --btnBg: var(--cyan);
+      --btnFontColor: var(--black);
+      }
+      .light-theme{
+        --bg: var(--cyan);
+        --fontColor: var(--black);
+        --btnBg: var(--black);
+        --btnFontColor: var(--cyan);
+      }
+      .fadeWhite{
+        animation: fadeWhite 5s forwards;  
+      }
+      .fadeBlack{
+        animation: fadeBlack 3s forwards;
+      }
+      :root{
+        --cyan: #00FF9E;
+        --black: #000000;
+        --white: white;
+      }
+      @keyframes fadeWhite{
+        from {background: black; --btnBg:#00FF9E; --btnFontColor: black; --fontColor: var(--cyan);}
+        to {background: #00FF9E; --btnBg: black; --btnFontColor: #00FF9E; --fontColor: var(--black);}
+    }
+    @keyframes fadeBlack{
+      from   {background: #00FF9E;--btnBg: black; --btnFontColor: #00FF9E;--fontColor: var(--black);}  
+      to  {background: black;--btnBg: #00FF9E; --btnFontColor: black;--fontColor: var(--cyan);}
+    }
+      .btn{
+        position: absolute;
+        top: 20px;
+        right: 250px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+      }
+      .btn:focus{
+        outline-style:none; 
+      }
