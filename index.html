@@ -3,28 +3,40 @@
 <head>
     <meta charset ="utf-8">
     <link rel="stylesheet" href="Homepage.css">
+    <Script>
+        var siteWidth = 1980;
+        var scale = screen.width /siteWidth;
+        if(scale==1) 
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+        else{
+            siteWidth = 1980-screen.width;
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');      
+    }
+        </script>
+    <meta name="viewport" content="width=1280, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<div><body class = "red">
     <header>
             
     <nav id ="list">
-        <ul>
+        <ul >
             <li><a class = "bar" href="index.html">Home</a ></li> 
 
             <li><a class = "bar"  href="Tiles.html">Tiles</a></li>
 
-            <li><a  class = "bar" href="Weight Scanner.html">Weight Scanner</a></li>
+            <li><a  class = "bar" href="Weight rate.html">Weight Scanner</a></li>
 
             <li><a  class = "bar" href="Music Player.html">Music Player</a></li>
 
-            <li><a  class = "bar" href="Trading Logger.html">Trading Logger</a></li>
+            <li><a  class = "bar" href="Trading Scanner.html">Trading Logger</a></li>
         </ul>    
     </nav>    
-        <h1 class ="title" font-family:"inherit">Gamin</h2>  
+        <h1 class ="title" id = "stroke">Gamin</h2>  
     </header>
-    <div class =container>
-    <img src ="https://github.com/Jrres/WebStartup/blob/main/circuit_board.jpg?raw=true --allow-file-access-from-files"  class = "inline"></img>
+</div>
+    <div class ="container"> 
+            <img src ="https://github.com/Jrres/WebStartup/blob/main/circuit_board.jpg?raw=true --allow-file-access-from-files"  class = "inline"></img>
     <div class ="inside">
     <table class ="data">
         <h3 class="top" align= "center" >Leader Board</h2>  
@@ -60,9 +72,8 @@
             </tr>  
         </div>
     </table>
-</div>
 <img src="https://github.com/Jrres/WebStartup/blob/main/hunie.jpg?raw=true --allow-file-access-from-files" align="right" class="intoyou" id="a"></img>
-</body>
+</body></div>
 
 </html>
 
