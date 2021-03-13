@@ -175,9 +175,16 @@ transform: translate(-30%,40%);
 .anim{
   animation:hunieY 2s forwards;
 }
+.rev{
+  animation: rev 2s forwards;
+}
 @keyframes hunieY{
-  from{transform:translateY(20%);}
-  to{transform:translateY(150%);}
+  from{transform:translate(-30%,40%);}
+  to{transform:translate(30%,40%);}
+  }
+  @keyframes rev{
+  from{transform:translate(30%,40%);}
+  to{transform:translate(600%,40%);}
   }
 @keyframes C{
 from{color:orange; color:pink;}
@@ -206,12 +213,13 @@ margin:10px;
 height:700px;
 width:280px;
 padding:20px;
-background:purple;
+background: rgb(87, 3, 121);
 }
 div.hidden{
 height:700px;
-text-indent: 100%;
+text-indent: 110%;
 white-space: nowrap;
 overflow: hidden;
+
 }
   
