@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href ="Main.css">
     <link rel="stylesheet" href="Homepage.css">
-</head> 
-<header>       
-    <nav id ="list">
-        <ul>
-            <li><a class = "bar" href="index.html">Home</a ></li> 
+</head>     
+    <nav class ="navbar">
 
-            <li><a class = "bar"  href="Tiles.html">Games</a></li>
+        <img class="img"></img>
 
-            <li><a  class = "bar" href="Weight rate.html">Weight Scanner</a></li>
+        <a   href="index.html">Home</a>
 
-            <li><a  class = "bar" href="Music Player.html">Music Player</a></li>
+        <a  href="Tiles.html">Games</a>
 
-            <li><a  class = "bar" href="Trading Scanner.html">Trading Logger</a></li>
-        </ul>    
-    </nav>    
-</header>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Apps</a>
+            <div class="dropdown-content">
+                <a  href="Weight Rate.html">Weight Scanner</a>
+
+                <a  href="Music Player.html">Music Player</a>
+
+                <a  href="Trading Scanner.html">Trading Logger</a>
+            </div>
+        </li>
+        
+        <a href="Dog BR.html">Dog Sim</a> 
+
+        <div class="search-container">
+
+        <input type="text" placeholder="Search.." name="search">
+
+      <button type="submit"><i class="fa fa-search"></i></button>
+      
+    </div>
+</nav>  
 <body class = "dark-theme">
     <div>
     <h1 class = "leftpos" >
@@ -30,10 +44,10 @@
         <img src = "https://github.com/Jrres/WebStartup/blob/main/sqr.gif?raw=true --allow-file-access-from-files" class  = "imgpos"></img>
     </div>
 <ul>
-        <p id= "msg" class = "underline" > Rules : </p>
+   <p id= "msg"  > Rules : </p> 
     <li class = "list"  > Move by pressing the up/down and side arrow keys.</li>
     <li class = "list" > Travel to each square until the whole board is green. </li>
-    <li class = "list" > &nbsp; Exit the maze!</li>
+    <li class = "list" >  Exit the maze!</li>
     <button class = "btn" id="btn">Dark</button>
 </ul>
     <script src="app.js"></script>

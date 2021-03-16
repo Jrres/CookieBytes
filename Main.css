@@ -5,6 +5,7 @@ font-family :monospace;
 margin:0;
 }
 .leftpos{
+margin-top: 60;
 text-align: left;
 height:500;
 font-family: 'Russo One', sans-serif;
@@ -21,9 +22,16 @@ background: none;
 outline-style:none; 
 }
 #msg{
-text-align: center;
+text-align: left;
 font-family: Fredoka One, Arial, Helvetica, sans-serif;
 margin: 20;
+padding:50;
+border:#00FF9E;
+text-decoration: dashed;
+}
+ul{
+border: solid red;
+width:20%;
 }
 div.pos:hover{
 background:#0c262c;
@@ -88,7 +96,7 @@ to  { --btnFontColor: black;--fontColor: var(--cyan);background: black;--btnBg: 
 }
 .btn{
 position: fixed;
-top:5;
+top:60;
 left:97%;
 height: 50px;
 width: 50px;
