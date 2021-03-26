@@ -14,6 +14,11 @@ width: 100%;
 padding: 0;
 }
 }
+.norep{
+  background-size: 100%;
+  background-repeat: repeat-y;
+  transform: scaley(1);
+}
 .img{
   background-image: url('chocolate.png');
   background-size: 50px;
@@ -26,19 +31,16 @@ padding: 0;
 .navbar {
   width: 100%;
   background-color: rgb(218, 40, 108);
-  overflow: hidden;
-  position:fixed;
-  top: 0;
-  z-index:1;/*cool -- specifies level of the ele*/
+  overflow: hidden; 
 }
 .navbar a {
   float: left;
-  padding: 15px;
+  text-align: center;
+  padding: 15px  !important;
   color: white;
   text-decoration: none;
   font-size: 17px;
   display: block;
-  padding:15px;
 }
 .navbar a:hover{
   background-color: rgb(31, 30, 30);
@@ -55,6 +57,7 @@ padding: 0;
 }
 .navbar .search-container button:hover {
   background: #ccc;
+  transition: all 0.5s ease;
 }
 .navbar input[type=text] {
   padding: 6px;
@@ -73,15 +76,29 @@ padding: 0;
   border: none;
   cursor: pointer;
 }
+
 li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
+  transition: all 0.5s ease;
 }
-
-li.dropdown {
-  display: inline-block;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
-
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 .dropdown-content {
+  margin-top:10;
+  margin-left:-20;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -90,26 +107,25 @@ li.dropdown {
   z-index: 1;
 }
 .dropdown-content a {
+  float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: darkblue;}
 
 .dropdown:hover .dropdown-content {
   display: block;
   transition: 0.3s;
 }
 .styles{
-color: white;
+color: rgb(255, 83, 189);
 font-family:Fredoka One, Arial, Helvetica, sans-serif;
 font-weight:normal;
-font-style:normal;
+font-size: larger;
 transform: translatey(-50px);
-position:relative;
 }
 #stroke{
 color:black;
@@ -134,8 +150,17 @@ width:50%;
 .leftside{
 width:25%;
 }
+h1.leftside {
+  padding:100;
+  display:inline;
+  width:33%;
+}
 .rightside{
 width: 25%;
+}
+.eggs{
+  background-image: url('eggs\ and\ bacon.jpg');
+  background-size: 100%;
 }
 .title {
 margin-top:50px;
@@ -144,11 +169,20 @@ line-height:left;
 height: 150px;
 animation: highlights 2s; 
 font-size:50;
-color:rgb(56, 44, 47);
+color:rgb(0, 0, 0);
 }
+.title .st{
+color:rgb(0, 0, 0);
+float:left;
+margin-left: 860;
+background-image: url(cookie\ bar.jpg);
+background-size: 50px;
+}
+
 .fakeimg {
 background-color: rgb(118, 32, 255);
 width: 100%;
+float:none;
 }
 .height{
 max-height: 500;
@@ -217,6 +251,10 @@ position:absolute;
 float:left;
 transform: translate(-30%,40%);
 }
+.up div{
+  background-image: none;
+}
+
 .anim{
   animation:hunieY 2s forwards;
 }
@@ -241,13 +279,11 @@ background-size: 100%;
 border-radius: 50%;
 }
 .aboutme{
-border-color:black;
-transform: translateY(50%);
-left:97%;
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
+transform: translate(100px,-35px);
+width: 40px;
+height: 40px;
+background-repeat: no-repeat;
+background-size: 100%;
 }
 div#expand{
 font-size: x-large;
