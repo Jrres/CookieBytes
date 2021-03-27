@@ -69,21 +69,53 @@
             </div>
         </div>
         <div class ="card">
-            <h2>Purpose:</h2>
+            <h2 align=center>Purpose:</h2>
             <div class="fakeimg" style="height:30px;">
-              HMMMM.. seems to be empty
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+                        
+                        <div class =fitness >
+    
+                        </div>
+                        Fitness
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">
+                        <div class =Gamelife >
+    
+                        </div>
+                        Game Design
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                        <div class =applife>
+    
+                        </div>
+                        Applications
+                    </button>
+                  </div>
+                  <div id="London" class="tabcontent">
+                    <p>Teach the best, safest, and most dependable way to lose weight and gain muscle.</p>
+                  </div>
+                  
+                  <div id="Paris" class="tabcontent">
+                    <p>Develop immersive 2d/3d games in the UI</p> 
+                  </div>
+                  
+                  <div id="Tokyo" class="tabcontent">
+                    <p>Design interactive apps with various features.</p>
+                  </div>
+                  
             </div>
         </div>
 </div>
 <div class = "column middle">
-    <div class="fakeimg" style="height:30px;"></div>
+    <div class="fakeimg" style="height:30px;">
+        <p1 class = "blank"> middle</p1>
+    </div>
                 
             </div>      
 <div class = "column rightside">
     <div class="fakeimg" style="height:30px;">
-    <h2 >oops</h2>
 </div>
-        <p>XD</p>
 
         <table class ="data">
             <h3 class="top" align= "center" >Leader Board</h3>  
@@ -119,11 +151,18 @@
                 </tr>  
             </div>
         </table>
+        <style>
+            .colorforbg{
+                background-color:  rgb(206, 76, 126);
+            }
+        </style>
+        <div class= "colorforbg">
         <div class="fakeimg" style="height:30px;"></div>
-        <h1>Updates:</h1>
+        <h1 align=center>Updates:</h1>
         <li class = "list">layout dividers</li> 
         <li class = "list">3 fold page design</li>
         <li class = "list">uniformity in each page</li>  
+    </div>
     </div>
 </div>
 <div class = "column leftside">
@@ -135,6 +174,38 @@
 </div>
 
 <script src="about.js"></script>
+<script>
+'use strict'
+const nav = document.querySelector("dropbtn");
+nav.addEventListener('click', function() {
+    var getnav = document.querySelector("navbar");
+    
+    if(getnav="dropbtn"){
+        document.querySelector("navbar").style.position= none;
+    }
+    else{
+        document.querySelector("navbar").style.position= sticky; 
+    }
+})
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
 
