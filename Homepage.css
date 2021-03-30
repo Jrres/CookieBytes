@@ -18,7 +18,8 @@ padding: 0;
 .norep{
   background-size: 100%;
   background-repeat: repeat-y;
-  transform: scaley(1);
+  height:10080;
+  width:1980;
 }
 .img{
   background-image: url('chocolate.png');
@@ -211,7 +212,7 @@ background-color: #202094;
 background: #000000;
 color:#fdfdfd;
 width:100%;
-height:5%;
+height:40px;
 text-decoration: underline  rgb(41, 34, 34) ;
 }
 /*table props*/
@@ -355,7 +356,8 @@ transition: all 1.5s ease;
 /* Style the tab content */
 .tabcontent {
   padding: 0px 12px;
-  background-color: rgb(206, 76, 126);
+  background-color: black;
+  color:white;
   border:#ddd;
   width: 95%;
   border-left: none;
@@ -363,6 +365,9 @@ transition: all 1.5s ease;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size:50;
   transition: all 1.5s ease;
+}
+.tabcontent:hover{
+  transition: color=blue 0.5s ease;
 }
 .fitness{
   background-image:url('favpng_emoji-biceps-iphone-muscle.png');
