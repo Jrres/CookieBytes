@@ -5,7 +5,7 @@ const input = document.querySelector("input.aboutme");
     var g = document.getElementById("a");
     alert(x.className)
     if(x== "hidden") {
-        x.className="expand"
+        x.className="expand";
         g.className="anim";
         
     }

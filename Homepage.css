@@ -254,8 +254,8 @@ text-align: center;
 }
 .intoyou{
 position:absolute;
-float:left;
-transform: translate(-30%,40%);
+float:right;
+transform: translate(150%,130%);
 }
 .up div{
   background-image: none;
@@ -265,15 +265,15 @@ transform: translate(-30%,40%);
   animation:hunieY 2s forwards;
 }
 .rev{
-  animation: rev 2s forwards;
+  animation: rev 4s forwards;
 }
 @keyframes hunieY{
-  from{transform:translate(-150%,40%);}
-  to{transform:translate(30%,40%);}
+  from{transform:translate(0%,300%);}
+  to{transform:translate(0,60%);}
   }
   @keyframes rev{
-  from{transform:translate(30%,40%);}
-  to{transform:translate(-150%,40%);}
+  from{transform:translate(0,60%); opacity:10%}
+  to{transform:translate(0%,300%); opacity:100%}
   }
 @keyframes C{
 from{color:orange; color:pink;}
@@ -305,8 +305,8 @@ transition: all 1.5s ease;
 }
 div.hidden{
 white-space: nowrap;
-height:700px;
 width:280px;
+display: none;
 transition: all 1.5s ease;
 }
 /*vert tabs*/
@@ -376,7 +376,7 @@ transition: all 1.5s ease;
   height:50;
 }
 .applife{
-  background-image:url('favpng_emoji-video-game-sms.png');/*needs img*/
+  background-image:url('favpng_emoji-domain-apple-avocado.png');/*needs img*/
   background-size:20%;
   background-repeat:no-repeat;
   height:50;
